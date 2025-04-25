@@ -10,9 +10,36 @@
   <body>
     <main>
       <h1>Lista de tarefas</h1>
+      <section id="create-todo-section">
+        <form id="create-todo-form">
+          <input
+            type="text"
+            id="description"
+            name="description"
+            placeholder="Qual tarefa deseja cadastrar?"
+            aria-label="Qual tarefa deseja cadastrar?"
+            class="input-description"
+          />
+          <button
+            type="submit"
+            id="save-task"
+            aria-label="Cadastrar tarefa"
+            class="add-task-btn"
+          >
+            +
+          </button>
+        </form>
+      </section>
+
       <section class="todo-list-section">
         <ul id="todo-list"></ul>
       </section>
+
+      <footer id="todo-footer">
+        <button onclick="removeDoneTasks()" class="remove-done-tasks-btn">
+          Remover tarefas concluídas
+        </button>
+      </footer>
     </main>
   </body>
 </html>
